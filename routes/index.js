@@ -7,10 +7,13 @@ router.get('/', function(req, res) {
   res.render('index', { title: 'Quiz' });
 });
 
-/* GET home page. */
+/* GET Questions. */
 router.get('/quizes/question', quizController.question);
 
-/* GET home page. */
+/* GET Answers. */
 router.get('/quizes/answer', quizController.answer);
+
+/*GET Author*/
+router.get('/author', quizController.author);
 
 module.exports = router;
